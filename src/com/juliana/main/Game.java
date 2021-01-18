@@ -8,6 +8,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 
+
 import javax.swing.JFrame;
 
 public class Game  extends Canvas implements Runnable{
@@ -22,10 +23,17 @@ public class Game  extends Canvas implements Runnable{
 	
 	private BufferedImage image;
 	
+
+	
 	public Game() {
 		setPreferredSize(new Dimension(WIDTH*SCALE,HEIGHT*SCALE));
 		initFrame();
+		
+		//inicializando objetos
+		
 		image = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_RGB);
+		
+		
 
 	}
 	
