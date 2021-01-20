@@ -1,4 +1,4 @@
-package com.juliana.entity;
+package com.juliana.entities;
 
 import java.awt.image.BufferedImage;
 

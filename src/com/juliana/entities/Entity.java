@@ -1,4 +1,4 @@
-package com.juliana.entity;
+package com.juliana.entities;
 
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
@@ -46,7 +46,7 @@ public class Entity {
 	}
 	
 	public void render(Graphics g) {
-		g.drawImage(sprite, this.getX() , this.getY(), null );
+		g.drawImage(sprite, this.getX() , this.getY(), null);
 		
 	}
 
