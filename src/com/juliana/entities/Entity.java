@@ -5,10 +5,10 @@ import java.awt.image.BufferedImage;
 
 public class Entity {
 	
-	private int x;
-	private int y;
-	private int width;
-	private int height;
+	protected int x;
+	protected int y;
+	protected int width;
+	protected int height;
 	
 	private BufferedImage sprite;
 	
@@ -20,6 +20,14 @@ public class Entity {
 		this.sprite = sprite;
 		
 	}
+		
+		public void setX(int newX) {
+			this.x = newX;
+		}
+		public void setY(int newY) {
+			this.y = newY;
+		}
+		
 	
 	public int getX() {
 			return this.x;
