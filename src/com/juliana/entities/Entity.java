@@ -10,7 +10,7 @@ public class Entity {
 	protected int width;
 	protected int height;
 	
-	private BufferedImage sprite;
+	private BufferedImage sprite ;
 	
 	public Entity(int x,int y , int width , int height, BufferedImage sprite) {
 		this.x = x;
@@ -54,8 +54,7 @@ public class Entity {
 	}
 	
 	public void render(Graphics g) {
-		g.drawImage(sprite, this.getX() , this.getY(), null);
-		
+		g.drawImage(sprite, this.getX(), this.getY(), null);
 	}
 
 }

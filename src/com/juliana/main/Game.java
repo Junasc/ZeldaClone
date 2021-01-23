@@ -31,7 +31,7 @@ public class Game  extends Canvas implements Runnable, KeyListener {
 	private BufferedImage image;
 	
 	public List<Entity> entities;
-	public Spritesheet spritesheet ;
+	public static Spritesheet spritesheet ;
 	
 	private Player player;
 	
@@ -99,8 +99,7 @@ public class Game  extends Canvas implements Runnable, KeyListener {
 	   BufferStrategy bs = this.getBufferStrategy();
 	   if(bs == null) {
 		   this.createBufferStrategy(3);
-		   return;
-		   
+		   return; 
 	   }
 	   
 	   Graphics g = image.getGraphics();
@@ -112,6 +111,7 @@ public class Game  extends Canvas implements Runnable, KeyListener {
 	   for( int i = 0; i < entities.size(); i++ ) {
 		   Entity e = entities.get(i);
 		   e.render(g);
+	   }
 		   
 	   /***/
 	   
@@ -119,10 +119,8 @@ public class Game  extends Canvas implements Runnable, KeyListener {
 	   g = bs.getDrawGraphics();
 	   g.drawImage(image, 0 , 0 , WIDTH*SCALE , HEIGHT*SCALE, null);
 	   bs.show();
-	   
 	   }
 	   			
-   }
    
    public void run() {
 	   
